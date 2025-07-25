@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BazaarIntel Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background-image: linear-gradient(to right, #4f46e5, #7c3aed);
+        }
+
+        .btn-primary:hover {
+            background-image: linear-gradient(to right, #4338ca, #6d28d9);
+        }
+
+        .btn-secondary {
+            background-image: linear-gradient(to right, #10b981, #059669);
+        }
+
+        .btn-secondary:hover {
+            background-image: linear-gradient(to right, #0d9e6e, #047857);
+        }
+
+        .spinner {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .textarea-autosize {
+            min-height: 80px;
+            resize: none;
+        }
+
+        .select-custom {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .select-custom:focus {
+            outline: none !important;
+            box-shadow: 0 0 0 2px #6366f1;
+            border: 1.5px solid #6366f1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-chart-line text-indigo-600 mr-3"></i>
+                    Bazaar Intelligence
+                </h1>
+                <p class="text-gray-500 mt-1">Monitor and analyze product data in real-time</p>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center md:space-x-4 mt-4 md:mt-0">
+                <div class="flex space-x-3 mb-3 md:mb-0">
+                    <a href="/seo"
+                        class="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                        <i class="fas fa-chart-pie mr-2"></i>
+                        SEO Analytics
+                    </a>
+                    <a href="/report"
+                        class="flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                        <i class="fas fa-file-alt mr-2"></i>
+                        Generated Report
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MODE SWITCHER -->
+        <div class="flex items-center space-x-4 mb-2">
+            <label class="font-semibold text-gray-700">Mode:</label>
+            <button id="mode-manual" class="mode-btn px-4 py-2 rounded-lg font-medium focus:outline-none"
+                title="Manual: Use step-by-step controls for scraping, analytics, and reporting.">Manual</button>
+            <button id="mode-agentic" class="mode-btn px-4 py-2 rounded-lg font-medium focus:outline-none"
+                title="Full Agent: Describe your goal and let the AI agent handle everything.">Full Agent</button>
+            <button id="help-btn" class="ml-4 text-gray-400 hover:text-blue-600 transition text-2xl" title="Help">
+                <i class="fas fa-question-circle"></i>
+            </button>
+        </div>
+        <div class="mb-6 text-sm text-gray-600" id="mode-desc">
+            <span id="desc-manual">Manual mode: Use step-by-step controls to scrape, analyze, and generate reports. You
+                have full control over each action.</span>
+            <span id="desc-agentic" class="hidden">Full Agent mode: Describe your goal (e.g., 'Scrape 10 products from
+                Khaadi and generate a report') and let the AI agent handle the workflow automatically.</span>
+        </div>
+
+        <!-- HELP MODAL -->
+        <div id="help-modal" class="fixed inset-0 bg-black bg-opacity-40 z-50 flex items-center justify-center hidden">
+            <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full p-8 relative">
+                <button id="close-help"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-blue-600 text-2xl focus:outline-none"><i
+                        class="fas fa-times"></i></button>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center"><i
+                        class="fas fa-question-circle text-blue-500 mr-2"></i> Dashboard Help</h2>
+                <div class="space-y-4 text-gray-700 text-base">
+                    <p><b>Manual Mode:</b> Use the dashboard controls to select a brand, set product count, and start
+                        scraping. Analyze data and generate reports step by step. Ideal for users who want full control.
+                    </p>
+                    <p><b>Full Agent Mode:</b> Enter a natural language goal (e.g., 'Scrape 10 products from Khaadi and
+                        generate a report'). The AI agent will handle scraping, SEO, analytics, and report generation
+                        automatically. Great for quick, end-to-end analysis.</p>
+                    <p><b>Agentic Query:</b> The query box is always available for custom SQL/LLM-powered questions
+                        about your data.</p>
+                    <ul class="list-disc pl-6 text-sm text-gray-600 mt-2">
+                        <li>Switch modes anytime using the buttons above.</li>
+                        <li>All results and reports are shown below the relevant section.</li>
+                        <li>For more details, contact support or see the README.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .mode-btn {
+                background: #f3f4f6;
+                color: #374151;
+                border: 2px solid transparent;
+                transition: all 0.2s;
+            }
+
+            .mode-btn.active {
+                background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+                color: #fff;
+                border: 2px solid #6366f1;
+                box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.08);
+            }
+        </style>
+
+        <script>
+            // Mode switcher logic with active highlight and description
+            function setManualMode() {
+                document.getElementById('agentic-section').classList.add('hidden');
+                document.querySelectorAll('.manual-section').forEach(el => el.classList.remove('hidden'));
+                document.getElementById('mode-manual').classList.add('active');
+                document.getElementById('mode-agentic').classList.remove('active');
+                document.getElementById('desc-manual').classList.remove('hidden');
+                document.getElementById('desc-agentic').classList.add('hidden');
+            }
+            function setAgenticMode() {
+                document.getElementById('agentic-section').classList.remove('hidden');
+                document.querySelectorAll('.manual-section').forEach(el => el.classList.add('hidden'));
+                document.getElementById('mode-agentic').classList.add('active');
+                document.getElementById('mode-manual').classList.remove('active');
+                document.getElementById('desc-agentic').classList.remove('hidden');
+                document.getElementById('desc-manual').classList.add('hidden');
+            }
+            document.getElementById('mode-manual').onclick = setManualMode;
+            document.getElementById('mode-agentic').onclick = setAgenticMode;
+            // Default to manual mode on load
+            setManualMode();
+
+            // Help modal logic
+            const helpBtn = document.getElementById('help-btn');
+            const helpModal = document.getElementById('help-modal');
+            const closeHelp = document.getElementById('close-help');
+            helpBtn.onclick = function () { helpModal.classList.remove('hidden'); };
+            closeHelp.onclick = function () { helpModal.classList.add('hidden'); };
+            helpModal.onclick = function (e) { if (e.target === helpModal) helpModal.classList.add('hidden'); };
+        </script>
+
+        <!-- AGENTIC WORKFLOW SECTION -->
+        <div id="agentic-section" class="hidden bg-white rounded-xl card p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-robot text-purple-600 mr-2"></i> Full Agent Workflow
+            </h2>
+            <textarea id="agentic-goal" rows="2" class="w-full border border-gray-300 rounded-lg p-3 mb-4"
+                placeholder="Describe your goal, e.g. 'Scrape 10 products from Khaadi and generate a report'"></textarea>
+            <button id="run-agentic"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold">
+                <i class="fas fa-play mr-2"></i> Run Agent
+            </button>
+            <div id="agentic-result" class="mt-6"></div>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-xl card p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">Total Products</p>
+                        <p class="text-2xl font-semibold text-gray-800 mt-1" id="total-products">...</p>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-indigo-50 flex items-center justify-center">
+                        <i class="fas fa-box text-indigo-600"></i>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-600">
+                        <i class="fas fa-arrow-up mr-1"></i> 12% from last week
+                    </span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl card p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">Brands Tracked</p>
+                        <p class="text-2xl font-semibold text-gray-800 mt-1" id="brands-tracked">...</p>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-blue-50 flex items-center justify-center">
+                        <i class="fas fa-tags text-blue-600"></i>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-green-50 text-green-600">
+                        <i class="fas fa-arrow-up mr-1"></i> 3 new this month
+                    </span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl card p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-500">Top Performing Brand</p>
+                        <p class="text-2xl font-semibold text-gray-800 mt-1" id="top-brand">Loading...</p>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-yellow-50 flex items-center justify-center">
+                        <i class="fas fa-trophy text-yellow-500"></i>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <span class="text-xs font-medium px-2 py-1 rounded-full bg-blue-50 text-blue-600"
+                        id="top-brand-score">
+                        <i class="fas fa-star mr-1"></i> Loading...
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Scrape Section -->
+            <div class="bg-white rounded-xl card p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-cloud-download-alt text-indigo-600 mr-2"></i>
+                        Data Collection
+                    </h2>
+                    <!-- Removed View History button -->
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Select Brand</label>
+                        <select id="scrape-brand"
+                            class="select-custom w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            <!-- Options will be populated by JS -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Product Count</label>
+                        <div class="relative">
+                            <input id="product-count" type="number" min="1" max="100" value="50"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                placeholder="Number of products">
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                                <span class="text-gray-500 text-sm">items</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button id="scrape-btn"
+                            class="btn-primary w-full text-white px-4 py-3 rounded-lg font-medium hover:shadow-md transition-all">
+                            <i class="fas fa-play mr-2"></i> Start Scraping
+                        </button>
+                    </div>
+
+                    <div id="scrape-status-container" class="hidden">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center">
+                                <div id="scrape-spinner" class="spinner mr-3 text-indigo-600">
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                <div>
+                                    <p id="scrape-status" class="text-sm font-medium text-gray-800">Scraping in
+                                        process...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Agent Query Section -->
+            <div class="bg-white rounded-xl card p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-robot text-purple-600 mr-2"></i>
+                        Data Intelligence Agent
+                    </h2>
+                    <div class="flex items-center space-x-2">
+                        <button class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-600 px-3 py-1 rounded-lg"
+                            id="show-sample-questions">
+                            <i class="fas fa-lightbulb mr-1"></i> Sample Questions
+                        </button>
+                    </div>
+                    <div id="sample-questions-list"
+                        class="hidden absolute z-10 bg-white border border-gray-200 rounded-lg shadow-lg mt-2 w-80">
+                        <ul class="divide-y divide-gray-100">
+                            <li><button type="button"
+                                    class="w-full text-left px-4 py-2 hover:bg-gray-50 sample-question">Which brand has
+                                    the highest average product price?</button></li>
+                            <li><button type="button"
+                                    class="w-full text-left px-4 py-2 hover:bg-gray-50 sample-question">Show me all
+                                    products from Khaadi above PKR 5,000.</button></li>
+                            <li><button type="button"
+                                    class="w-full text-left px-4 py-2 hover:bg-gray-50 sample-question">What are the top
+                                    5 most expensive products?</button></li>
+                            <li><button type="button"
+                                    class="w-full text-left px-4 py-2 hover:bg-gray-50 sample-question">How many
+                                    products are available for each brand?</button></li>
+                            <li><button type="button"
+                                    class="w-full text-left px-4 py-2 hover:bg-gray-50 sample-question">Which brands
+                                    offer products in the 'casual' category?</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Your Question</label>
+                        <textarea id="agent-query" rows="3"
+                            class="textarea-autosize w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                            placeholder="Ask about products, brands, trends..."></textarea>
+                    </div>
+
+                    <div>
+                        <button id="agent-query-btn"
+                            class="w-full bg-purple-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-purple-700 hover:shadow-md transition-all">
+                            <i class="fas fa-paper-plane mr-2"></i> Submit Query
+                        </button>
+                    </div>
+
+                    <div id="agent-query-spinner" class="hidden justify-center py-4">
+                        <div class="spinner text-purple-600">
+                            <i class="fas fa-circle-notch fa-2x"></i>
+                        </div>
+                    </div>
+
+                    <div id="agent-query-result" class="mt-4 text-sm bg-gray-50 rounded-lg p-4 min-h-32">
+                        <div class="text-center text-gray-400 py-8">
+                            <i class="fas fa-comment-dots text-2xl mb-2"></i>
+                            <p>Your analysis will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <div class="mt-12 bg-white rounded-xl card p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-xl font-semibold text-gray-800 flex items-center">
+                    <i class="fas fa-chart-pie text-blue-600 mr-2"></i>
+                    Product Analytics
+                </h2>
+                <!-- Removed time range dropdown -->
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 rounded-lg p-4 flex items-center justify-center"
+                    style="height: 300px; min-width: 0;">
+                    <canvas id="avgPriceChart"
+                        style="width:100%; height:100%; max-width:100%; max-height:100%; display:block;"></canvas>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 flex items-center justify-center"
+                    style="height: 300px; min-width: 0;">
+                    <canvas id="productCountChart"
+                        style="width:100%; height:100%; max-width:100%; max-height:100%; display:block;"></canvas>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4 flex items-center justify-center"
+                    style="height: 300px; min-width: 0;">
+                    <canvas id="priceDistChart"
+                        style="width:100%; height:100%; max-width:100%; max-height:100%; display:block;"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEO Analytics Trend Lines and Radar Charts -->
+        <div id="seo-analytics-section" class="mt-12">
+            <div class="bg-white rounded-xl card p-6 mb-8">
+                <h2 class="text-xl font-semibold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-chart-line text-green-600 mr-2"></i>
+                    SEO Metric Trends
+                </h2>
+                <div id="seo-trend-lines"></div>
+            </div>
+            <div class="bg-white rounded-xl card p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-bullseye text-purple-600 mr-2"></i>
+                    SEO Brand Profiles
+                </h2>
+                <div id="seo-radar-charts" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // --- SEO Analytics Trend Lines and Radar Charts ---
+                fetch('/api/seo/keywords')
+                    .then(res => res.json())
+                    .then(data => {
+                        const brandNames = Object.keys(data);
+                        let allMetrics = [];
+                        if (brandNames.length > 0) {
+                            allMetrics = Object.keys(data[brandNames[0]].avg_scores);
+                        }
+                        // --- Trend Lines ---
+                        let trendHtml = '<div class="space-y-8">';
+                        allMetrics.forEach(metric => {
+                            const chartId = `dashboard-trend-${metric}`;
+                            trendHtml += `
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="font-medium text-gray-800">${metric.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</h3>
+                                <span class="text-sm text-gray-500">Avg: ${Math.round(brandNames.reduce((sum, b) => sum + data[b].avg_scores[metric], 0) / brandNames.length)}</span>
+                            </div>
+                            <div class="h-20">
+                                <canvas id="${chartId}"></canvas>
+                            </div>
+                        </div>
+                    `;
+                        });
+                        trendHtml += '</div>';
+                        document.getElementById('seo-trend-lines').innerHTML = trendHtml;
+                        // Draw line charts for each metric
+                        allMetrics.forEach(metric => {
+                            const ctx = document.getElementById(`dashboard-trend-${metric}`).getContext('2d');
+                            new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: brandNames,
+                                    datasets: [{
+                                        label: metric.replace(/_/g, ' '),
+                                        data: brandNames.map(b => data[b].avg_scores[metric]),
+                                        borderColor: 'rgba(234, 88, 12, 0.9)',
+                                        backgroundColor: 'rgba(234, 88, 12, 0.1)',
+                                        borderWidth: 2,
+                                        fill: true,
+                                        tension: 0.3,
+                                        pointBackgroundColor: 'rgba(234, 88, 12, 1)',
+                                        pointRadius: 3,
+                                        pointHoverRadius: 5
+                                    }]
+                                },
+                                options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    plugins: {
+                                        legend: { display: false },
+                                        tooltip: {
+                                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                            titleFont: { size: 12 },
+                                            bodyFont: { size: 11 },
+                                            padding: 8,
+                                            cornerRadius: 6,
+                                            displayColors: false
+                                        }
+                                    },
+                                    scales: {
+                                        y: {
+                                            display: false,
+                                            beginAtZero: true,
+                                            max: 100
+                                        },
+                                        x: {
+                                            grid: { display: false },
+                                            ticks: { font: { size: 11 } }
+                                        }
+                                    },
+                                    elements: { line: { borderWidth: 2 } }
+                                }
+                            });
+                        });
+                        // --- Radar Charts ---
+                        let radarHtml = '';
+                        Object.entries(data).forEach(([brand, info]) => {
+                            const brandId = brand.replace(/\s+/g, '');
+                            radarHtml += `
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-3">${brand}</h4>
+                            <div class="h-48">
+                                <canvas id="dashboard-radar-${brandId}"></canvas>
+                            </div>
+                        </div>
+                    `;
+                        });
+                        document.getElementById('seo-radar-charts').innerHTML = radarHtml;
+                        Object.entries(data).forEach(([brand, info]) => {
+                            if (info.avg_scores) {
+                                const brandId = brand.replace(/\s+/g, '');
+                                const ctx = document.getElementById(`dashboard-radar-${brandId}`).getContext('2d');
+                                new Chart(ctx, {
+                                    type: 'radar',
+                                    data: {
+                                        labels: Object.keys(info.avg_scores).map(m => m.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())),
+                                        datasets: [{
+                                            label: `${brand} SEO Profile`,
+                                            data: Object.values(info.avg_scores),
+                                            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                                            borderColor: 'rgba(59, 130, 246, 1)',
+                                            pointBackgroundColor: 'rgba(59, 130, 246, 1)',
+                                            pointBorderColor: '#fff',
+                                            pointHoverRadius: 5,
+                                            pointHoverBackgroundColor: 'rgba(59, 130, 246, 1)',
+                                            pointHoverBorderColor: '#fff',
+                                            pointHitRadius: 10,
+                                            pointBorderWidth: 2
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            legend: { display: false },
+                                            tooltip: {
+                                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                                titleFont: { size: 12 },
+                                                bodyFont: { size: 11 },
+                                                padding: 8,
+                                                cornerRadius: 6,
+                                                displayColors: false
+                                            }
+                                        },
+                                        scales: {
+                                            r: {
+                                                angleLines: {
+                                                    color: 'rgba(0, 0, 0, 0.1)'
+                                                },
+                                                grid: {
+                                                    color: 'rgba(0, 0, 0, 0.05)'
+                                                },
+                                                suggestedMin: 0,
+                                                suggestedMax: 100,
+                                                ticks: {
+                                                    backdropColor: 'transparent',
+                                                    stepSize: 20
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                    });
+
+                // Fetch and update Total Products
+                fetch('/api/products/count')
+                    .then(res => res.json())
+                    .then(data => {
+                        document.getElementById('total-products').textContent = data.total_products;
+                    });
+                // Fetch and update Brands Tracked
+                fetch('/api/brands')
+                    .then(res => res.json())
+                    .then(data => {
+                        document.getElementById('brands-tracked').textContent = data.length;
+                    });
+                // In JS, after DOMContentLoaded, fetch /api/seo/keywords and update #top-brand and #top-brand-score
+                fetch('/api/seo/keywords')
+                    .then(res => res.json())
+                    .then(data => {
+                        let topBrand = null;
+                        let topScore = -Infinity;
+                        Object.entries(data).forEach(([brand, info]) => {
+                            if (info.avg_scores) {
+                                const avg = Object.values(info.avg_scores).reduce((a, b) => a + b, 0) / Object.values(info.avg_scores).length;
+                                if (avg > topScore) {
+                                    topScore = avg;
+                                    topBrand = brand;
+                                }
+                            }
+                        });
+                        document.getElementById('top-brand').textContent = topBrand || 'N/A';
+                        document.getElementById('top-brand-score').innerHTML = `<i class='fas fa-star mr-1'></i> ${topScore !== -Infinity ? topScore.toFixed(1) : 'N/A'}`;
+                    })
+                    .catch(() => {
+                        document.getElementById('top-brand').textContent = 'N/A';
+                        document.getElementById('top-brand-score').textContent = 'N/A';
+                    });
+                // Product Analytics - Dynamic
+                fetch('/api/analytics/products')
+                    .then(res => res.json())
+                    .then(data => {
+                        const brands = data.brand_stats.map(b => b.brand);
+                        const avgPrices = data.brand_stats.map(b => b.avg_price);
+                        const productCounts = data.brand_stats.map(b => b.count);
+                        const priceDistLabels = data.price_distribution.labels;
+                        const priceDistData = data.price_distribution.counts;
+
+                        // Average Price per Brand
+                        new Chart(document.getElementById('avgPriceChart').getContext('2d'), {
+                            type: 'bar',
+                            data: {
+                                labels: brands,
+                                datasets: [{
+                                    label: 'Avg Price (PKR)',
+                                    data: avgPrices,
+                                    backgroundColor: 'rgba(99, 102, 241, 0.7)',
+                                    borderColor: 'rgba(99, 102, 241, 1)',
+                                    borderWidth: 2,
+                                    barPercentage: 0.7,
+                                    categoryPercentage: 0.7
+                                }]
+                            },
+                            options: {
+                                indexAxis: 'y', // Make it horizontal
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                layout: { padding: { left: 32, right: 32, top: 24, bottom: 24 } },
+                                plugins: {
+                                    legend: { display: false },
+                                    title: { display: true, text: 'Average Price per Brand' }
+                                },
+                                scales: {
+                                    x: { beginAtZero: true, max: Math.max(...avgPrices) * 1.25 },
+                                    y: { barPercentage: 0.7, categoryPercentage: 0.7 }
+                                }
+                            }
+                        });
+
+                        // Product Count per Brand
+                        new Chart(document.getElementById('productCountChart').getContext('2d'), {
+                            type: 'bar',
+                            data: {
+                                labels: brands,
+                                datasets: [{
+                                    label: 'Product Count',
+                                    data: productCounts,
+                                    backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                                    borderColor: 'rgba(16, 185, 129, 1)',
+                                    borderWidth: 2,
+                                    barPercentage: 0.7,
+                                    categoryPercentage: 0.7
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                layout: { padding: { left: 32, right: 32, top: 24, bottom: 24 } },
+                                plugins: {
+                                    legend: { display: false },
+                                    title: { display: true, text: 'Product Count per Brand' }
+                                },
+                                scales: {
+                                    y: { beginAtZero: true, barPercentage: 0.7, categoryPercentage: 0.7 },
+                                    x: { barPercentage: 0.7, categoryPercentage: 0.7 }
+                                }
+                            }
+                        });
+
+                        // Price Distribution
+                        new Chart(document.getElementById('priceDistChart').getContext('2d'), {
+                            type: 'doughnut',
+                            data: {
+                                labels: priceDistLabels,
+                                datasets: [{
+                                    label: 'Product Price Distribution',
+                                    data: priceDistData,
+                                    backgroundColor: [
+                                        'rgba(99, 102, 241, 0.7)',
+                                        'rgba(16, 185, 129, 0.7)',
+                                        'rgba(234, 179, 8, 0.7)',
+                                        'rgba(239, 68, 68, 0.7)'
+                                    ],
+                                    borderColor: '#fff',
+                                    borderWidth: 2
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                layout: { padding: { left: 32, right: 32, top: 24, bottom: 24 } },
+                                plugins: {
+                                    legend: { position: 'bottom' },
+                                    title: { display: true, text: 'Product Price Distribution' }
+                                }
+                            }
+                        });
+                    });
+
+                // Update Last Scrape Time (auto-refresh every 5 seconds)
+                let lastScrapeTimestamp = null;
+                function updateLastScrapeTime() {
+                    fetch('/api/scrape/status')
+                        .then(res => res.json())
+                        .then(data => {
+                            const el = document.getElementById('last-scrape-time');
+                            if (data.timestamp) {
+                                let parsedDate = new Date(data.timestamp);
+                                if (!isNaN(parsedDate.getTime())) {
+                                    el.textContent = timeAgo(parsedDate);
+                                } else {
+                                    el.textContent = data.timestamp; // fallback: show raw timestamp
+                                }
+                            } else {
+                                el.textContent = 'Never';
+                            }
+                        })
+                        .catch(() => {
+                            const el = document.getElementById('last-scrape-time');
+                            el.textContent = 'Never';
+                        });
+                }
+                updateLastScrapeTime();
+                setInterval(updateLastScrapeTime, 5000);
+                // Helper function for human-friendly time
+                function timeAgo(date) {
+                    const now = new Date();
+                    const diff = Math.floor((now - date) / 1000);
+                    if (diff < 60) return 'just now';
+                    if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+                    if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+                    return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                }
+
+                // Populate brand dropdown
+                fetch('/api/brands')
+                    .then(res => res.json())
+                    .then(brands => {
+                        let sel = document.getElementById('scrape-brand');
+                        sel.innerHTML = '';
+                        // Add placeholder option
+                        let placeholder = document.createElement('option');
+                        placeholder.value = '';
+                        placeholder.text = 'Select a brand';
+                        placeholder.disabled = true;
+                        placeholder.selected = true;
+                        sel.appendChild(placeholder);
+
+                        // Add brand options
+                        brands.forEach(b => {
+                            let opt = document.createElement('option');
+                            opt.value = b;
+                            opt.text = b;
+                            sel.appendChild(opt);
+                        });
+                    });
+
+                // Scrape trigger and status
+                let scrapeInterval = null;
+                function triggerScrape() {
+                    let brand = document.getElementById('scrape-brand').value;
+                    if (!brand) {
+                        alert('Please select a brand first');
+                        return;
+                    }
+                    let count = parseInt(document.getElementById('product-count').value) || 50;
+                    document.getElementById('scrape-status-container').classList.remove('hidden');
+                    document.getElementById('scrape-status').innerHTML = 'Scraping in process...';
+                    fetch(`/api/scrape/${brand}?count=${count}`, { method: 'POST' })
+                        .then(res => res.json())
+                        .then(data => {
+                            document.getElementById('scrape-status').innerText = 'Scraping in process...';
+                            pollScrapeStatus();
+                        })
+                        .catch(err => {
+                            document.getElementById('scrape-status').innerHTML = `<span class="text-red-600">Error: ${err.message || 'Failed to start scrape'}</span>`;
+                            document.getElementById('scrape-spinner').classList.add('hidden');
+                        });
+                }
+
+                function pollScrapeStatus() {
+                    if (scrapeInterval) clearInterval(scrapeInterval);
+                    scrapeInterval = setInterval(() => {
+                        fetch('/api/scrape/status')
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data.finished) {
+                                    document.getElementById('scrape-status').innerText = `Scraping completed for ${data.brand}. ${data.count || ''} products added.`;
+                                    document.getElementById('scrape-spinner').innerHTML = '<i class="fas fa-check-circle text-green-500"></i>';
+                                    clearInterval(scrapeInterval);
+                                    setTimeout(() => {
+                                        document.getElementById('scrape-status-container').classList.add('hidden');
+                                        document.getElementById('scrape-spinner').innerHTML = '<i class="fas fa-circle-notch"></i>';
+                                    }, 5000);
+                                } else {
+                                    document.getElementById('scrape-status').innerText = 'Scraping in process...';
+                                }
+                            });
+                    }, 2000);
+                }
+
+                // Agent Query Logic
+                document.getElementById('agent-query-btn').onclick = function () {
+                    const query = document.getElementById('agent-query').value.trim();
+                    const resultDiv = document.getElementById('agent-query-result');
+                    const spinner = document.getElementById('agent-query-spinner');
+
+                    resultDiv.innerHTML = '';
+                    if (!query) {
+                        resultDiv.innerHTML = '<div class="text-red-500 p-3 rounded bg-red-50"><i class="fas fa-exclamation-circle mr-2"></i>Please enter a query.</div>';
+                        return;
+                    }
+
+                    // Show loading state
+                    spinner.classList.remove('hidden');
+                    resultDiv.innerHTML = '<div class="text-center py-8"><div class="spinner text-purple-600 inline-block mb-2"><i class="fas fa-circle-notch fa-lg"></i></div><p class="text-gray-500">Analyzing your question...</p></div>';
+
+                    fetch('/api/agent/query', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ query })
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            spinner.classList.add('hidden');
+
+                            if (data.error) {
+                                resultDiv.innerHTML = `<div class="text-red-500 p-3 rounded bg-red-50"><i class="fas fa-exclamation-circle mr-2"></i>Error: ${data.error}</div>`;
+                            } else if (data.formatted_result && data.formatted_result.type === 'table') {
+                                // Render table
+                                let html = `<div class="mb-3">
+                        <h3 class="font-medium text-gray-800 mb-1">${data.question || 'Analysis Results'}</h3>
+                        <p class="text-sm text-gray-500 mb-3">${data.explanation || ''}</p>
+                    </div>
+                    <div class="overflow-x-auto border border-gray-200 rounded-lg">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>`;
+
+                                data.formatted_result.headers.forEach(h => {
+                                    html += `<th scope="col" class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">${h}</th>`;
+                                });
+
+                                html += `</tr></thead><tbody class="bg-white divide-y divide-gray-200">`;
+
+                                data.formatted_result.rows.forEach((row, i) => {
+                                    html += `<tr class="${i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">`;
+                                    row.forEach(cell => {
+                                        html += `<td class="px-4 py-2 whitespace-nowrap text-sm text-gray-700">${cell}</td>`;
+                                    });
+                                    html += '</tr>';
+                                });
+
+                                html += '</tbody></table></div>';
+                                resultDiv.innerHTML = html;
+                            } else {
+                                let answer = data.explanation || data.answer || 'No explanation available.';
+                                resultDiv.innerHTML = `<div class="bg-indigo-50 rounded-lg p-4">
+                        <h3 class="font-medium text-indigo-800 mb-2">${data.question || 'Your Question'}</h3>
+                        <div class="prose prose-sm max-w-none text-gray-700">
+                            ${answer.replace(/\n/g, '<br>')}
+                        </div>
+                    </div>`;
+                            }
+                        })
+                        .catch(err => {
+                            spinner.classList.add('hidden');
+                            resultDiv.innerHTML = `<div class="text-red-500 p-3 rounded bg-red-50"><i class="fas fa-exclamation-circle mr-2"></i>Error: ${err.message || 'Failed to process query'}</div>`;
+                        });
+                };
+
+                // Add auto-focus to query textarea when clicking anywhere in the agent card
+                document.getElementById('agent-query-result').addEventListener('click', function () {
+                    document.getElementById('agent-query').focus();
+                });
+
+                // Sample Questions Dropdown Logic
+                document.getElementById('show-sample-questions').onclick = function (e) {
+                    e.stopPropagation();
+                    const list = document.getElementById('sample-questions-list');
+                    list.classList.toggle('hidden');
+                };
+                document.addEventListener('click', function () {
+                    document.getElementById('sample-questions-list').classList.add('hidden');
+                });
+                document.querySelectorAll('.sample-question').forEach(btn => {
+                    btn.onclick = function (e) {
+                        e.preventDefault();
+                        // Remove extra whitespace and line breaks
+                        document.getElementById('agent-query').value = this.textContent.trim().replace(/\s+/g, ' ');
+                        document.getElementById('sample-questions-list').classList.add('hidden');
+                        document.getElementById('agent-query').focus();
+                    };
+                });
+
+                // Scrape button event listener
+                document.getElementById('scrape-btn').addEventListener('click', triggerScrape);
+
+                // Run agentic workflow
+                const runAgenticBtn = document.getElementById('run-agentic');
+                if (runAgenticBtn) {
+                    runAgenticBtn.onclick = async function () {
+                        const goal = document.getElementById('agentic-goal').value.trim();
+                        if (!goal) {
+                            document.getElementById('agentic-result').innerHTML = '<span class="text-red-600">Please enter your goal for the agent.</span>';
+                            return;
+                        }
+                        document.getElementById('agentic-result').innerHTML = '<div class="text-center text-gray-500 py-8"><i class="fas fa-spinner fa-spin fa-2x mb-2"></i><p>Running agent...</p></div>';
+                        try {
+                            const res = await fetch('/api/agentic/run', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ goal })
+                            });
+                            const data = await res.json();
+                            if (data.error) {
+                                document.getElementById('agentic-result').innerHTML = `<span class='text-red-600'>${data.error}</span>`;
+                            } else {
+                                // Render the report nicely
+                                const now = new Date();
+                                const dateStr = now.toLocaleDateString();
+                                const timeStr = now.toLocaleTimeString();
+                                let reportHtml = '';
+                                if (data.report && data.report.trim()) {
+                                    reportHtml = `
+                                        <div class="prose max-w-none mb-6 p-6 bg-white rounded-xl shadow-md border border-gray-100" style="overflow-x:auto;">
+                                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Generated Report</h3>
+                                            <div class="markdown-body">${marked.parse(data.report)}</div>
+                                            <div class="mt-6 pt-4 border-t border-gray-200 text-sm text-gray-500 flex items-center">
+                                                <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+                                                <span>Report generated at ${dateStr} ${timeStr}</span>
+                                            </div>
+                                        </div>
+                                    `;
+                                } else {
+                                    reportHtml = `<div class='text-gray-500 italic mb-6'>No report was generated.</div>`;
+                                }
+                                // Render summary box
+                                const summaryHtml = `
+                                    <div class="bg-gray-50 rounded-lg p-4 mb-6 flex flex-wrap gap-6 items-center border border-gray-100">
+                                        <div><b>Goal:</b> <span class="text-gray-700">${data.goal || ''}</span></div>
+                                        <div><b>Brand:</b> <span class="text-gray-700">${data.brand || 'N/A'}</span></div>
+                                        <div><b>Products:</b> <span class="text-gray-700">${data.count || 'N/A'}</span></div>
+                                        <div><b>Status:</b> <span class="text-gray-700">${data.result || ''}</span></div>
+                                    </div>
+                                `;
+                                document.getElementById('agentic-result').innerHTML = reportHtml + summaryHtml;
+                            }
+                        } catch (err) {
+                            document.getElementById('agentic-result').innerHTML = `<span class='text-red-600'>Error: ${err.message}</span>`;
+                        }
+                    };
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>

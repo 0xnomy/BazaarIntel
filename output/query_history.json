@@ -1,0 +1,2784 @@
+[
+  {
+    "query": "Show me all products from Khaadi above PKR 5,000.",
+    "sql": "SELECT * FROM products WHERE brand = 'Khaadi' AND price > 5000;",
+    "result": [
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-04BA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves and a round neckline with a V-cut.",
+        "name": "Embroidered | Linen Cotton Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET24722AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves, a band collar with a V-cut, and a scalloped hem.",
+        "name": "Embroidered | Linen Cotton",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET247146AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Cambric",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid embroidered kurta featuring three-quarter sleeves and a round neckline with a placket down the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid kurta featuring full sleeves and an embellished neckline with a V-cut.",
+        "name": "Dyed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with button detailing on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "6200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-08TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves with tassels and silver coins, a round neckline with a V-cut and a geometric pattern on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-09TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a round neckline with button detailing, and a rounded hem.",
+        "name": "Printed | Cambric Kurta",
+        "price": "None",
+        "url": "https://pk.khaadi.com/kurta/25-06-6E8-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves and a band collar with a V-cut.",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      }
+    ],
+    "explanation": "Khaadi has 43 products above PKR5,000, with prices ranging from PKR5,000 to PKR9,500. The products include various kurtas, pants, and 3-piece outfits, mostly embroidered, with materials like Thai Silk, Russian Raw Silk, and Polyester."
+  },
+  {
+    "query": "Which brand has the highest average product price?",
+    "sql": "SELECT brand FROM products GROUP BY brand ORDER BY AVG(price) DESC LIMIT 1;",
+    "result": [
+      {
+        "brand": "Alkaram Studio"
+      }
+    ],
+    "explanation": "Alkaram Studio has the highest average product price."
+  },
+  {
+    "query": "Show me all products from Khaadi above PKR 5,000.",
+    "sql": "SELECT * FROM products WHERE brand = 'Khaadi' AND price > 5000;",
+    "result": [
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-04BA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves and a round neckline with a V-cut.",
+        "name": "Embroidered | Linen Cotton Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET24722AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves, a band collar with a V-cut, and a scalloped hem.",
+        "name": "Embroidered | Linen Cotton",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET247146AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Cambric",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid embroidered kurta featuring three-quarter sleeves and a round neckline with a placket down the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid kurta featuring full sleeves and an embellished neckline with a V-cut.",
+        "name": "Dyed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with button detailing on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "6200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-08TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves with tassels and silver coins, a round neckline with a V-cut and a geometric pattern on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-09TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a round neckline with button detailing, and a rounded hem.",
+        "name": "Printed | Cambric Kurta",
+        "price": "None",
+        "url": "https://pk.khaadi.com/kurta/25-06-6E8-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves and a band collar with a V-cut.",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      }
+    ],
+    "explanation": "There are 38 Khaadi products above PKR5,000, with prices ranging from PKR5,200 to PKR9,500."
+  },
+  {
+    "query": "Show me all products from Khaadi above PKR 5,000.",
+    "sql": "SELECT * FROM products WHERE brand = 'Khaadi' AND price > 5000;",
+    "result": [
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-04BA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves and a round neckline with a V-cut.",
+        "name": "Embroidered | Linen Cotton Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET24722AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves, a band collar with a V-cut, and a scalloped hem.",
+        "name": "Embroidered | Linen Cotton",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET247146AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Cambric",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid embroidered kurta featuring three-quarter sleeves and a round neckline with a placket down the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid kurta featuring full sleeves and an embellished neckline with a V-cut.",
+        "name": "Dyed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with button detailing on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "6200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-08TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves with tassels and silver coins, a round neckline with a V-cut and a geometric pattern on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-09TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a round neckline with button detailing, and a rounded hem.",
+        "name": "Printed | Cambric Kurta",
+        "price": "None",
+        "url": "https://pk.khaadi.com/kurta/25-06-6E8-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves and a band collar with a V-cut.",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      }
+    ],
+    "explanation": "The search returned 43 products from Khaadi with prices above PKR5,000. The products include various kurtas, pants, and 3-piece outfits made of materials like Thai Silk, Cotton Dobby, and Polyester, with prices ranging from PKR5,000 to PKR9,500."
+  },
+  {
+    "query": "Show me all products from Khaadi above PKR 5,000.",
+    "sql": "SELECT * FROM products WHERE brand = 'Khaadi' AND price > 5000;",
+    "result": [
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-04BA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves and a round neckline with a V-cut.",
+        "name": "Embroidered | Linen Cotton Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET24722AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves, a band collar with a V-cut, and a scalloped hem.",
+        "name": "Embroidered | Linen Cotton",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET247146AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Cambric",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid embroidered kurta featuring three-quarter sleeves and a round neckline with a placket down the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid kurta featuring full sleeves and an embellished neckline with a V-cut.",
+        "name": "Dyed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with button detailing on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "6200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-08TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves with tassels and silver coins, a round neckline with a V-cut and a geometric pattern on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-09TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a round neckline with button detailing, and a rounded hem.",
+        "name": "Printed | Cambric Kurta",
+        "price": "None",
+        "url": "https://pk.khaadi.com/kurta/25-06-6E8-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves and a band collar with a V-cut.",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      }
+    ],
+    "explanation": "Here is a concise summary of the result:\n\nThe query retrieved 43 products from Khaadi with prices above PKR5,000. The prices range from PKR5,000 to PKR9,500. Some products have missing descriptions or material information."
+  },
+  {
+    "query": "Which brands offer products in the 'casual' category?",
+    "sql": "SELECT DISTINCT brand FROM products WHERE description LIKE '%casual%';",
+    "result": [
+      {
+        "brand": "Outfitters"
+      },
+      {
+        "brand": "Alkaram Studio"
+      }
+    ],
+    "explanation": "Outfitters and Alkaram Studio offer products in the casual category."
+  },
+  {
+    "query": "What are the top 5 most expensive products?",
+    "sql": "SELECT name, price FROM products ORDER BY price DESC LIMIT 5;",
+    "result": [
+      {
+        "name": "Printed | Cambric Kurta",
+        "price": "None"
+      },
+      {
+        "name": "Suede Loafers",
+        "price": "9990.0"
+      },
+      {
+        "name": "Suede Loafers",
+        "price": "9990.0"
+      },
+      {
+        "name": "Stitched Lawn Embroidered Shirt",
+        "price": "9869.0"
+      },
+      {
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0"
+      }
+    ],
+    "explanation": "The top 5 most expensive products are: Printed Cambric Kurta with No price available, two Suede Loafers for PKR9,990 each, Stitched Lawn Embroidered Shirt for PKR9,869, and Embroidered Jacquard Tailored 3 Piece for PKR9,500."
+  },
+  {
+    "query": "what ist he avg price of all the products of khaadi",
+    "sql": "SELECT AVG(price) FROM products WHERE brand = 'khaadi';",
+    "result": [
+      {
+        "AVG(price)": null
+      }
+    ],
+    "explanation": "No products from Khaadi have a listed price. Checking for 'khaadi' in different cases also returns no results."
+  },
+  {
+    "query": "what ist he avg price of all the products of outfitters",
+    "sql": "SELECT AVG(price) FROM products WHERE brand = 'Outfitters';",
+    "result": [
+      {
+        "AVG(price)": 4146.981132075472
+      }
+    ],
+    "explanation": "The average price of all Outfitters products is PKR4,146.98."
+  },
+  {
+    "query": "How many products are available for each brand?",
+    "sql": "SELECT brand, COUNT(*) FROM products GROUP BY brand;",
+    "result": [
+      {
+        "brand": "Alkaram Studio",
+        "COUNT(*)": 37
+      },
+      {
+        "brand": "Breakout",
+        "COUNT(*)": 148
+      },
+      {
+        "brand": "Khaadi",
+        "COUNT(*)": 225
+      },
+      {
+        "brand": "Outfitters",
+        "COUNT(*)": 265
+      },
+      {
+        "brand": "Sana Safinaz",
+        "COUNT(*)": 113
+      }
+    ],
+    "explanation": "Alkaram Studio has 37 products, Breakout has 148, Khaadi has 225, Outfitters has 265, and Sana Safinaz has 113 products available."
+  },
+  {
+    "query": "Which brand has the highest average product price?",
+    "sql": "SELECT brand FROM products GROUP BY brand ORDER BY AVG(price) DESC LIMIT 1;",
+    "result": [
+      {
+        "brand": "Alkaram Studio"
+      }
+    ],
+    "explanation": "Alkaram Studio has the highest average product price."
+  },
+  {
+    "query": "How many products are available for each brand?",
+    "sql": "SELECT brand, COUNT(*) FROM products GROUP BY brand;",
+    "result": [
+      {
+        "brand": "Alkaram Studio",
+        "COUNT(*)": 37
+      },
+      {
+        "brand": "Breakout",
+        "COUNT(*)": 148
+      },
+      {
+        "brand": "Khaadi",
+        "COUNT(*)": 225
+      },
+      {
+        "brand": "Outfitters",
+        "COUNT(*)": 265
+      },
+      {
+        "brand": "Sana Safinaz",
+        "COUNT(*)": 113
+      }
+    ],
+    "explanation": "Alkaram Studio has 37 products, Breakout has 148 products, Khaadi has 225 products, Outfitters has 265 products, and Sana Safinaz has 113 products."
+  },
+  {
+    "query": "Which brands offer products in the 'casual' category?",
+    "sql": "SELECT DISTINCT brand FROM products WHERE description LIKE '%casual%';",
+    "result": [
+      {
+        "brand": "Outfitters"
+      },
+      {
+        "brand": "Alkaram Studio"
+      }
+    ],
+    "explanation": "Outfitters and Alkaram Studio offer products in the casual category."
+  },
+  {
+    "query": "Show me all products from Khaadi above PKR 5,000.",
+    "sql": "SELECT * FROM products WHERE brand = 'Khaadi' AND price > 5000;",
+    "result": [
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts, a round neckline with a V-cut and a scalloped hem.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-04BA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves and a round neckline with a V-cut.",
+        "name": "Embroidered | Linen Cotton Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET24722AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves, a band collar with a V-cut, and a scalloped hem.",
+        "name": "Embroidered | Linen Cotton",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/R-EET247146AT-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Cambric",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid embroidered kurta featuring three-quarter sleeves and a round neckline with a placket down the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A solid kurta featuring full sleeves and an embellished neckline with a V-cut.",
+        "name": "Dyed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves with lace inserts and a round neckline with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-07TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with button detailing on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "6200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-08TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves with tassels and silver coins, a round neckline with a V-cut and a geometric pattern on the front.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-09TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS616AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring a sleeveless design, a band collar with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves with lace detailing, a neckline with a V-cut and embellishments on the front.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Jacquard Tailored 3 Piece",
+        "price": "9500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/AS627AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a round neckline with button detailing, and a rounded hem.",
+        "name": "Printed | Cambric Kurta",
+        "price": "None",
+        "url": "https://pk.khaadi.com/kurta/25-06-6E8-04TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves and a band collar with a V-cut.",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Flared pants featuring an embroidered design at the hems.",
+        "name": "Embroidered | Russian Raw Silk Pants",
+        "price": "5000.0",
+        "url": "https://pk.khaadi.com/pants/25-05S24-05BB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a round neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring a straight silhouette and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-01TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A floral printed kurta featuring full sleeves with pearl detailing and a round neckline with a V-cut adorned with floral finishings.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-06TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Printed | Cheese Cloth Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/24-12E01-10TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short floral embroidered kurta featuring full sleeves, and a band collar with a V-cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral embroidered kurta featuring full sleeves with lace inserts and a band collar with a V-cut.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Raw Silk",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS614AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves with tassels and silver coins, and a band collar with a V-cut adorned with drawstring detailing.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-07TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A 3-piece outfit featuring a short floral embroidered kurta with full sleeves and a band collar with a V-cut, paired with solid pants and a matching floral embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-05TD-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut, tassel detailing and embroidery on the back.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-03TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline and finishings on the front.",
+        "name": "Embroidered | Thai Silk Kurta",
+        "price": "7000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S25-01TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: Embroidered pants featuring a flared cut.",
+        "name": "Embroidered | Linen Cotton Pants",
+        "price": "7100.0",
+        "url": "https://pk.khaadi.com/pants/R-EEB247147AB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long floral embroidered kurta with full sleeves and a neckline with a V-cut adorned with tassels on the front, paired with solid pants featuring an embroidered hem and a matching floral embroidered dupatta with tassel finishings.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-04TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-11TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "",
+        "name": "Embroidered | Lawn Tailored 3 Piece",
+        "price": "8500.0",
+        "url": "https://pk.khaadi.com/tailored-3-piece/SS615AST-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A short embroidered kurta featuring full sleeves, a round neckline with a V-cut adorned with seashell detailing and an embroidered hem.",
+        "name": "Embroidered | Cotton Dobby Kurta",
+        "price": "5200.0",
+        "url": "https://pk.khaadi.com/kurta/25-09-9S2-05TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long floral printed kurta featuring full sleeves, a band collar with a V-cut and lace detailing on the hem.",
+        "name": "Printed | Swiss Voile Kurta",
+        "price": "8200.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S21-08TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long solid kurta featuring three-quarter puffed sleeves, a round neckline with buttons, and floral crochet detailing on the front.",
+        "name": "Embroidered | Crosshatch Poplin Kurta",
+        "price": "5700.0",
+        "url": "https://pk.khaadi.com/kurta/25-03EX27-02TA-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: A long embroidered kurta featuring full sleeves, a band collar with a V-cut and embellishments on the front.",
+        "name": "Embroidered | Russian Raw Silk Kurta",
+        "price": "8000.0",
+        "url": "https://pk.khaadi.com/kurta/25-05S24-05TB-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      },
+      {
+        "brand": "Khaadi",
+        "description": "Description: 3-piece outfit featuring a long embroidered kurta with full sleeves and a band collar with a V-cut, paired with embroidered pants and a matching embroidered dupatta.",
+        "name": "Embroidered | Polyester",
+        "price": "9000.0",
+        "url": "https://pk.khaadi.com/3-piece-co-ord-set/25-03E34-07TC-VG_MULTI.html?source=plp&plpcgid=001-New-In",
+        "material": null
+      }
+    ],
+    "explanation": "Khaadi has 41 products above PKR5,000, with prices ranging from PKR5,000 to PKR9,500. The products include various kurtas, pants, and 3-piece outfits made of materials like Thai Silk, Cotton Dobby, and Polyester."
+  }
+]

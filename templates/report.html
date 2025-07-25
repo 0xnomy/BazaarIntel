@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar Intelligence Deep Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4b7e5b6e8b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .chat-bubble {
+            border-radius: 1.25rem;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .user-bubble {
+            background-color: #3b82f6;
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 0.25rem;
+        }
+
+        .ai-bubble {
+            background-color: #f3f4f6;
+            color: #1f2937;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        .typing-indicator {
+            display: flex;
+            padding: 0.5rem 1rem;
+        }
+
+        .typing-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #9ca3af;
+            border-radius: 50%;
+            margin: 0 0.125rem;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typingAnimation {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-0.25rem);
+            }
+        }
+
+        .report-section {
+            transition: all 0.3s ease;
+        }
+
+        .report-section:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen font-sans smooth-scroll">
+    <!-- Remove example prompts/sidebar and report generation button -->
+    <div class="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <header class="flex flex-col items-center mb-10">
+            <h1 class="text-4xl font-bold text-center text-gray-800 mb-2">Bazaar Intelligence ReportGen</h1>
+            <p class="text-lg text-gray-600 text-center max-w-2xl">
+                Generate comprehensive, AI-powered reports with detailed analysis and actionable insights
+            </p>
+        </header>
+        <div class="grid grid-cols-1 lg:grid-cols-1 gap-8">
+            <div class="lg:col-span-1 space-y-6">
+                <!-- Report output section -->
+                <div id="report-result" class="bg-white rounded-xl shadow-md p-6 min-h-64 report-section mb-8">
+                    <div class="text-center py-10" id="report-loading">
+                        <div class="inline-block p-4 bg-blue-50 rounded-full mb-4">
+                            <i class="fas fa-file-alt text-3xl text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-medium text-gray-700 mb-2">Generating your report...</h3>
+                        <p class="text-gray-500 max-w-md mx-auto">
+                            Please wait while we analyze your data and generate a detailed report.
+                        </p>
+                    </div>
+                </div>
+                <!-- Chatbot section -->
+                <div id="chatbot-section" class="bg-white rounded-xl shadow-md overflow-hidden report-section">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-500 p-4 text-white">
+                        <h2 class="text-xl font-semibold flex items-center">
+                            <i class="fas fa-comments mr-2"></i> Report Assistant
+                        </h2>
+                        <p class="text-sm opacity-90">Ask follow-up questions about your report</p>
+                    </div>
+                    <div id="chat-history" class="bg-gray-50 p-4 h-64 overflow-y-auto">
+                        <div class="text-center py-8 text-gray-400">
+                            <i class="fas fa-comment-dots text-2xl mb-2"></i>
+                            <p>Start a conversation about your report</p>
+                        </div>
+                    </div>
+                    <div class="p-4 border-t border-gray-200">
+                        <div class="flex items-end gap-2 mb-2">
+                            <textarea id="chat-input" rows="2" placeholder="Ask a question about the report..."
+                                class="flex-1 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"></textarea>
+                            <button id="chat-send"
+                                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition flex items-center justify-center text-lg shadow-md">
+                                <i class="fas fa-paper-plane mr-2 text-xl"></i> Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-16 text-center text-gray-500 text-sm pb-8">
+            <div class="flex justify-center mb-6">
+                <a href="/"
+                    class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors font-semibold text-base">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Dashboard
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-blue-600 transition"><i class="fas fa-question-circle"></i> Help</a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#" class="hover:text-blue-600 transition"><i class="fas fa-shield-alt"></i> Privacy</a>
+            </div>
+            <p>© 2025 Bazaar Intelligence. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const reportResult = document.getElementById('report-result');
+        const reportLoading = document.getElementById('report-loading');
+        let lastReport = '';
+
+        // On page load, auto-generate the report
+        window.addEventListener('DOMContentLoaded', generateReport);
+
+        async function generateReport() {
+            reportLoading.classList.remove('hidden');
+            try {
+                const response = await fetch('/api/report/deep', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: 'Generate a comprehensive report based on the latest product and SEO data.' })
+                });
+                const data = await response.json();
+                if (data.report) {
+                    reportResult.innerHTML = `
+                    <div class="prose max-w-none">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Generated Report</h3>
+                        <div class="markdown-body">${marked.parse(data.report)}</div>
+                        <div class="mt-6 pt-4 border-t border-gray-200">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-info-circle mr-2 text-blue-500"></i>
+                                <span>Report generated at ${new Date().toLocaleTimeString()}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                    lastReport = data.report;
+                } else {
+                    reportResult.innerHTML = `<div class='text-red-600'>Error: ${data.error || 'Failed to generate report.'}</div>`;
+                }
+            } catch (err) {
+                reportResult.innerHTML = `<div class="text-red-600 p-4 bg-red-50 rounded-lg">
+                <i class="fas fa-exclamation-triangle mr-2"></i>
+                Failed to generate report. Please try again.
+            </div>`;
+            }
+        }
+
+        // Chatbot logic
+        const chatHistoryDiv = document.getElementById('chat-history');
+        const chatInput = document.getElementById('chat-input');
+        const chatSendBtn = document.getElementById('chat-send');
+        let chatHistory = [];
+
+        chatSendBtn.addEventListener('click', sendChatMessage);
+        chatInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendChatMessage();
+            }
+        });
+
+        function renderChat() {
+            if (chatHistory.length === 0) {
+                chatHistoryDiv.innerHTML = `
+                <div class="text-center py-8 text-gray-400">
+                    <i class="fas fa-comment-dots text-2xl mb-2"></i>
+                    <p>Start a conversation about your report</p>
+                </div>
+            `;
+                return;
+            }
+            chatHistoryDiv.innerHTML = chatHistory.map(msg => `
+            <div class="flex mb-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}">
+                <div class="${msg.role === 'user' ? 'user-bubble' : 'ai-bubble'} chat-bubble">
+                    ${msg.text}
+                </div>
+            </div>
+        `).join('');
+            chatHistoryDiv.scrollTop = chatHistoryDiv.scrollHeight;
+        }
+
+        function getReportText() {
+            return lastReport;
+        }
+
+        async function sendChatMessage() {
+            const question = chatInput.value.trim();
+            if (!question) return;
+            chatHistory.push({ role: 'user', text: question });
+            renderChat();
+            chatInput.value = '';
+            chatHistory.push({
+                role: 'ai',
+                text: '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>'
+            });
+            renderChat();
+            const report = getReportText();
+            try {
+                const res = await fetch('/api/report/followup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ report, question })
+                });
+                const data = await res.json();
+                chatHistory.pop();
+                if (data.answer) {
+                    chatHistory.push({ role: 'ai', text: data.answer });
+                } else {
+                    chatHistory.push({ role: 'ai', text: '<span class="text-red-500">Error: ' + (data.error || 'No answer') + '</span>' });
+                }
+            } catch (err) {
+                chatHistory.pop();
+                chatHistory.push({ role: 'ai', text: '<span class="text-red-500">Sorry, there was an error processing your question. Please try again.</span>' });
+            }
+            renderChat();
+        }
+    </script>
+</body>
+
+</html>

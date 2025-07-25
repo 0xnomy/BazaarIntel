@@ -1,0 +1,120 @@
+{
+    "khaadi": {
+        "brand": "Khaadi",
+        "base_url": [
+            "https://pk.khaadi.com/new-in/",
+            "https://pk.khaadi.com/ready-to-wear/",
+            "https://pk.khaadi.com/men-new-in/",
+            "https://pk.khaadi.com/fabrics/",
+            "https://pk.khaadi.com/fragrances/"
+        ],
+        "js_rendered": true,
+        "product_listing": {
+            "product_card_selector": "a.link.plpRedirectPdp",
+            "product_link_attribute": "href"
+        },
+        "pagination": {
+            "type": "scroll",
+            "max_scrolls": 10
+        },
+        "product_page": {
+            "name_selector": "h1.product-name",
+            "price_selector": "span.value.cc-price",
+            "description_selector": "li span:has(strong:text('Description:'))"
+        }
+    },
+    "outfitters": {
+        "brand": "Outfitters",
+        "base_url": [
+            "https://outfitters.com.pk/collections/men-new-arrivals-view-all",
+            "https://outfitters.com.pk/collections/women-new-arrivals-view-all",
+            "https://outfitters.com.pk/collections/men-shirts",
+            "https://outfitters.com.pk/collections/women-shirts",
+            "https://outfitters.com.pk/collections/women-dresses-and-jumpsuit"
+        ],
+        "js_rendered": true,
+        "product_listing": {
+            "product_card_selector": "h3.card__heading.h5 a.product-link-main",
+            "product_link_attribute": "href"
+        },
+        "pagination": {
+            "type": "scroll",
+            "max_scrolls": 15
+        },
+        "product_page": {
+            "name_selector": "div.product__title h1",
+            "price_selector": "span.money",
+            "description_selector": "div.pdp-description p span.metafield-multi_line_text_field",
+            "material_in_description": true
+        }
+    },
+    "sana_safinaz": {
+        "brand": "Sana Safinaz",
+        "base_url": [
+            "https://www.sanasafinaz.com/pk/sale.html",
+            "https://www.sanasafinaz.com/pk/unstitched-fabric.html",
+            "https://www.sanasafinaz.com/pk/ready-to-wear.html",
+            "https://www.sanasafinaz.com/pk/luxury-pret.html"
+        ],
+        "js_rendered": true,
+        "product_listing": {
+            "product_card_selector": "a.product-item-link",
+            "product_link_attribute": "href"
+        },
+        "pagination": {
+            "type": "scroll",
+            "max_scrolls": 10
+        },
+        "product_page": {
+            "name_selector": "span.base[itemprop='name']",
+            "price_selector": "span.price",
+            "description_selector": "div.product.attribute.description p",
+            "material_in_description": true
+        }
+    },
+    "alkaram": {
+        "brand": "Alkaram Studio",
+        "base_url": [
+            "https://www.alkaramstudio.com/collections/new-in",
+            "https://www.alkaramstudio.com/collections/monochrome-edit",
+            "https://www.alkaramstudio.com/collections/sale"
+        ],
+        "js_rendered": true,
+        "product_listing": {
+            "product_card_selector": "a.t4s-full-width-link.is--href-replaced",
+            "product_link_attribute": "href"
+        },
+        "pagination": {
+            "type": "scroll",
+            "max_scrolls": 10
+        },
+        "product_page": {
+            "name_selector": "h1.t4s-product__title",
+            "price_selector": "div.t4s-product-price",
+            "description_selector": "div#t4s-tab-destemplate--16602647167156__main"
+        }
+    },
+    "breakout": {
+        "brand": "Breakout",
+        "base_url": [
+            "https://breakout.com.pk/collections/men",
+            "https://breakout.com.pk/collections/women",
+            "https://breakout.com.pk/collections/kids-girls",
+            "https://breakout.com.pk/collections/kids-boys"
+        ],
+        "js_rendered": true,
+        "product_listing": {
+            "product_card_selector": "p.product-item__title",
+            "product_link_attribute": "parent_a_href"
+        },
+        "pagination": {
+            "type": "scroll",
+            "max_scrolls": 10
+        },
+        "product_page": {
+            "name_selector": "h1.product__title.heading-medium span[data-zoom-caption]",
+            "price_selector": "div.product__price span[data-product-price]",
+            "description_selector": "span[style*='font-size:12px']"
+        }
+    }
+}

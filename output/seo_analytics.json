@@ -1,0 +1,284 @@
+{
+  "Khaadi": {
+    "keywords": [
+      "embroidery kurta",
+      "floral kurta",
+      "printed kurta",
+      "embroidered pants",
+      "floral pants",
+      "solid pants",
+      "wide leg pants",
+      "flared pants",
+      "kurta with lace detailing",
+      "kurta with tassels",
+      "V-cut neckline",
+      "full sleeves",
+      "three quarter sleeves",
+      "band collar",
+      "round neckline",
+      "embroidered hem",
+      "polka dot print",
+      "Khaadi kurtas",
+      "Khaadi pants",
+      "Khaadi embroidered outfits",
+      "Pakistani clothing",
+      "traditional wear",
+      "women's clothing",
+      "ethnic wear",
+      "embroidered kurta",
+      "floral embroidered kurta",
+      "kurta with embroidery",
+      "pants with embroidery",
+      "shalwar kameez"
+    ],
+    "avg_scores": {
+      "keyword_density": 20.0,
+      "content_quality": 29.34,
+      "brand_consistency": 25.0,
+      "uniqueness": 20.2,
+      "readability": 71.68
+    },
+    "sample_scores": [
+      {
+        "keyword_density": 20,
+        "content_quality": 30,
+        "brand_consistency": 25,
+        "uniqueness": 10,
+        "readability": 70
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 30,
+        "brand_consistency": 0,
+        "uniqueness": 40,
+        "readability": 70
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 30,
+        "brand_consistency": 50,
+        "uniqueness": 10,
+        "readability": 70
+      }
+    ]
+  },
+  "Outfitters": {
+    "keywords": [
+      "embroidered resort collar shirt",
+      "textured knitted t-shirt",
+      "knitted striped t-shirt",
+      "basic t-shirt",
+      "faux suede loafers",
+      "multi-piece sneakers",
+      "textured polo shirt",
+      "basic crew neck t-shirt",
+      "straight trousers",
+      "velcro slippers",
+      "cotton linen trousers",
+      "loose pleated shorts",
+      "striped textured shirt",
+      "casual wear",
+      "men's clothing",
+      "summer wear",
+      "comfortable footwear",
+      "cotton clothing",
+      "relaxed fit",
+      "regular fit",
+      "soft fabric",
+      "breathable clothing",
+      "everyday wear",
+      "laid-back style",
+      "casual style"
+    ],
+    "avg_scores": {
+      "keyword_density": 24.68,
+      "content_quality": 63.08,
+      "brand_consistency": 18.54,
+      "uniqueness": 72.74,
+      "readability": 96.12
+    },
+    "sample_scores": [
+      {
+        "keyword_density": 20,
+        "content_quality": 75,
+        "brand_consistency": 50,
+        "uniqueness": 70,
+        "readability": 70
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 55,
+        "brand_consistency": 25,
+        "uniqueness": 70,
+        "readability": 100
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 75,
+        "brand_consistency": 50,
+        "uniqueness": 70,
+        "readability": 100
+      }
+    ]
+  },
+  "Sana Safinaz": {
+    "keywords": [
+      "Sana Safinaz",
+      "Pakistani clothing",
+      "Lawn suits",
+      "Chiffon fabric",
+      "Embroidered dresses",
+      "Formal wear",
+      "Casual wear",
+      "Unstitched fabric",
+      "Stitched dresses",
+      "Eastern wear",
+      "Pakistani dresses",
+      "Women's clothing",
+      "Fashion wear",
+      "Traditional clothing",
+      "Karachi fashion",
+      "Online clothing store",
+      "Fabric online",
+      "Dresses online"
+    ],
+    "avg_scores": {
+      "keyword_density": 97.98,
+      "content_quality": 63.85,
+      "brand_consistency": 0.0,
+      "uniqueness": 13.03,
+      "readability": 69.72
+    },
+    "sample_scores": [
+      {
+        "keyword_density": 100,
+        "content_quality": 65,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 70
+      },
+      {
+        "keyword_density": 100,
+        "content_quality": 65,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 70
+      },
+      {
+        "keyword_density": 100,
+        "content_quality": 65,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 70
+      }
+    ]
+  },
+  "Alkaram Studio": {
+    "keywords": [
+      "Shahsawar Latha Shirt",
+      "Slim Fit Shirt",
+      "Regular Fit Shirt",
+      "Cotton Shirt",
+      "Cambric Embroidered Outfit",
+      "Printed Cambric Outfit",
+      "Crape Dobby Shirt",
+      "Embroidered 2 Piece Outfit",
+      "Casual Wear Outfits",
+      "Cotton Jacquard Band",
+      "Zari Lawn Embroidered Outfit",
+      "Shirt with Culotte",
+      "Shirt with Bootcut Pants",
+      "Shirt with Dupatta",
+      "Slim Collar Shirt",
+      "Regular Collar Shirt",
+      "Alkaram Studio Casual Wear",
+      "Pakistani Casual Wear",
+      "Women's Embroidered Outfits",
+      "Printed Outfits for Women"
+    ],
+    "avg_scores": {
+      "keyword_density": 20.0,
+      "content_quality": 27.3,
+      "brand_consistency": 14.59,
+      "uniqueness": 12.43,
+      "readability": 78.11
+    },
+    "sample_scores": [
+      {
+        "keyword_density": 20,
+        "content_quality": 20,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 100
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 20,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 100
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 30,
+        "brand_consistency": 20,
+        "uniqueness": 10,
+        "readability": 100
+      }
+    ]
+  },
+  "Breakout": {
+    "keywords": [
+      "cotton tees",
+      "graphic tees",
+      "hoodie tees",
+      "cotton shirts",
+      "linen blend shirts",
+      "cotton trousers",
+      "cotton shorts",
+      "leather belt",
+      "synthetic blend shirts",
+      "cotton denim",
+      "textured polo",
+      "relaxed fit shorts",
+      "boxy fit tees",
+      "perfumes for men",
+      "cargo trousers",
+      "breathable cotton",
+      "embroidered tees",
+      "printed tees",
+      "summer clothing",
+      "casual wear"
+    ],
+    "avg_scores": {
+      "keyword_density": 24.42,
+      "content_quality": 49.15,
+      "brand_consistency": 0.85,
+      "uniqueness": 66.12,
+      "readability": 87.96
+    },
+    "sample_scores": [
+      {
+        "keyword_density": 20,
+        "content_quality": 55,
+        "brand_consistency": 0,
+        "uniqueness": 10,
+        "readability": 70
+      },
+      {
+        "keyword_density": 40,
+        "content_quality": 60,
+        "brand_consistency": 0,
+        "uniqueness": 100,
+        "readability": 100
+      },
+      {
+        "keyword_density": 20,
+        "content_quality": 55,
+        "brand_consistency": 0,
+        "uniqueness": 100,
+        "readability": 70
+      }
+    ]
+  }
+}
