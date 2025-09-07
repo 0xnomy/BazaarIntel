@@ -1,18 +1,32 @@
-requests
-beautifulsoup4
-lxml
-flask
-flask-cors
-langchain
-langchain-community
-langchain-groq
-python-dotenv
+# Core web and API
 fastapi
 uvicorn
 jinja2
-playwright
 python-multipart
-aiofiles
-sqlalchemy
-sqlite3
+requests
+
+# Scraping and parsing
+beautifulsoup4
+lxml
+playwright  # After install, run: python -m playwright install
+
+# Database
+sqlalchemy  # (if used, but not directly imported)
+sqlite3      # (part of stdlib, not needed in requirements)
+
+# LLMs and agentic workflow
+langchain
+langchain-community
+langchain-groq
+
+# Environment and config
+python-dotenv
+
+# NLP and SEO analytics
 nltk
+textstat
+
+# Misc
+flask         # (not used in main app, can be removed if not needed)
+flask-cors    # (not used in main app, can be removed if not needed)
+aiofiles      # (not directly imported, remove if not used)
