@@ -33,10 +33,10 @@
     ],
     "avg_scores": {
       "keyword_density": 20.0,
-      "content_quality": 29.34,
-      "brand_consistency": 25.0,
-      "uniqueness": 20.2,
-      "readability": 71.68
+      "content_quality": 29.36,
+      "brand_consistency": 25.12,
+      "uniqueness": 20.0,
+      "readability": 71.62
     },
     "sample_scores": [
       {
@@ -91,11 +91,11 @@
       "casual style"
     ],
     "avg_scores": {
-      "keyword_density": 24.68,
-      "content_quality": 63.08,
-      "brand_consistency": 18.54,
-      "uniqueness": 72.74,
-      "readability": 96.12
+      "keyword_density": 26.08,
+      "content_quality": 62.99,
+      "brand_consistency": 18.19,
+      "uniqueness": 70.3,
+      "readability": 96.41
     },
     "sample_scores": [
       {
@@ -109,7 +109,7 @@
         "keyword_density": 20,
         "content_quality": 55,
         "brand_consistency": 25,
-        "uniqueness": 70,
+        "uniqueness": 10,
         "readability": 100
       },
       {
