@@ -2,165 +2,83 @@
 
 BazaarIntel is an AI-powered e-commerce analytics platform for Pakistani fashion brands. It automates data collection, SEO analytics, product analysis, and report generation using dynamic web scraping, LLMs, and agentic workflows.
 
-## Features
+![BazaarIntel Dashboard](das.png)
 
-- Agentic Workflow (LangGraph + LLaMA 4):
-  - Automated pipeline: from user goal to scraping, SEO analysis, data storage, and report generation.
-  - Robust planner node extracts brand and step from user goal, even if LLM output is ambiguous.
-  - CLI and API integration for agent runs.
+## What It Does
 
-- Dynamic Web Scraping:
-  - Scrapes product data from multiple brands using Playwright/BeautifulSoup.
-  - Handles multiple base URLs per brand, case-insensitive brand matching.
-  - Product data stored in SQLite (`products_data.db`).
+- **Automated Pipeline**: From user goal to scraping, SEO analysis, data storage, and report generation
+- **Dynamic Web Scraping**: Scrapes product data from multiple Pakistani fashion brands
+- **SEO Analytics**: Extracts and scores SEO keywords using LLM analysis
+- **Interactive Dashboard**: Real-time product analytics, brand comparison, and trend visualizations
+- **Report Generation**: LLM-powered reports with follow-up Q&A capabilities
 
-- SEO Analytics:
-  - Extracts and scores SEO keywords for each brand using LLM.
-  - Calculates keyword density, content quality, uniqueness, and more.
-  - Results saved to `output/seo_analytics.json` and `seo_keywords.json`.
+## How It Works
 
-- Interactive Dashboard:
-  - Real-time product analytics (charts for price, count, distribution).
-  - SEO analytics, brand comparison, and trend visualizations.
-  - Agentic SQL/LLM query interface for custom data questions.
+1. **Agentic Workflow** (LangGraph + LLaMA 4):
+   - Planner node extracts brand and parameters from user goals
+   - Automated pipeline: scrape → SEO analysis → data storage → report generation
 
-- Report Generation:
-  - LLM-powered, context-restricted reports (only uses project data, not outside knowledge).
-  - Follow-up Q&A and chat-based report generation.
-  - Markdown output, rendered in frontend.
+2. **Data Collection**:
+   - Uses Playwright for dynamic web scraping
+   - Handles multiple base URLs per brand with case-insensitive matching
+   - Stores product data in SQLite database
+
+3. **SEO Analysis**:
+   - LLM extracts high-impact keywords and phrases
+   - Calculates keyword density, content quality, and uniqueness scores
+   - Results cached in JSON files for performance
+
+4. **API Endpoints**:
+   - `/api/scrape/{brand}`: Trigger product scraping
+   - `/api/seo/keywords`: Generate SEO analytics
+   - `/api/analytics/products`: Get product analytics data
+   - `/api/report/deep`: Generate comprehensive reports
+   - `/api/agent/query`: Agentic SQL/LLM queries
+
+## APIs Used
+
+- **Groq API**: For LLaMA 4 model inference
+- **Playwright**: Browser automation for web scraping
+- **BeautifulSoup**: HTML parsing and data extraction
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Set up environment variables in `.env`:
+   ```
+   GROQ_API_KEY=your_groq_api_key
+   ```
+
+3. Start the server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+4. Access dashboard at `http://localhost:8000`
 
 ## Project Structure
 
 ```
 bazaarintel/
-├── agent/
-│   └── agent_graph.py         # LangGraph agent pipeline (main agentic workflow)
-├── main.py                    # FastAPI app entrypoint
-├── scrapper.py                # Static/dynamic product scraper
-├── seo_logic.py               # SEO scoring utilities
-├── products_data.db           # SQLite database (products table)
-├── output/
-│   ├── query_history.json     # LLM query/explanation history
-│   └── seo_analytics.json     # SEO analytics per brand
-├── report_utils/
-│   └── report_gen.py          # LLM-powered report generation
-├── routers/
-│   ├── agent.py               # Agentic SQL/LLM query API
-│   ├── report.py              # Report generation/followup/chat APIs
-│   ├── scrape.py              # Scraping API endpoints
-│   ├── seo.py                 # SEO analytics API
-│   └── trends.py              # Product analytics API
-├── templates/
-│   ├── dashboard.html         # Main dashboard UI
-│   ├── report.html            # Report/chat UI
-│   └── seo.html               # SEO analytics UI
-├── requirements.txt           # Python dependencies
-└── ...
+├── agent/agent_graph.py      # LangGraph agent pipeline
+├── main.py                   # FastAPI application entrypoint
+├── scrapper.py               # Product data scraper
+├── seo_logic.py              # SEO scoring utilities
+├── routers/                  # API endpoint modules
+├── templates/                # HTML dashboard templates
+├── report_utils/report_gen.py # LLM-powered report generation
+├── products_data.db          # SQLite database
+└── output/                   # Generated analytics and reports
 ```
 
-## Setup & Installation
+## MIT License
 
-1. Clone the repo:
-   ```sh
-   git clone <repo-url>
-   cd bazaarintel
-   ```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-3. Set up environment variables:
-   - Create a `.env` file in the root:
-     ```
-     GROQ_API_KEY=your_groq_api_key
-     ```
-
-4. Ensure SQLite DB exists:
-   - The scraper and agent will create/populate `products_data.db` as needed.
-
-## Agentic Workflow (LangGraph)
-
-- Entry: `agent/agent_graph.py`
-- How to run:
-  ```sh
-  python agent/agent_graph.py "Scrape 10 products from khaadi, do their seo and generate a report"
-  # Or specify count:
-  python agent/agent_graph.py "Scrape Sana Safinaz and generate SEO report" --count 20
-  ```
-- What happens:
-  1. PlannerNode: LLM parses goal, extracts brand/step (robust fallback if LLM fails).
-  2. ScrapeNode: Runs `scrapper.py` for the brand/count.
-  3. SEOAnalysisNode: Calls SEO extraction/scoring.
-  4. StoreDataNode: Verifies DB update.
-  5. ReportNode: Generates report using only project data.
-  6. EndNode: Workflow complete.
-- Logs: CLI prints each step, errors, and final state.
-
-## FastAPI Backend & Frontend
-
-- Start the server:
-  ```sh
-  uvicorn main:app --reload
-  ```
-- Access dashboard:
-  - Open [http://localhost:8000/dashboard](http://localhost:8000/dashboard)
-- APIs:
-  - `/api/scrape/{brand}`: Start scraping for a brand (with `count` param)
-  - `/api/seo/keywords`: Get/generate SEO analytics
-  - `/api/analytics/products`: Product analytics (for dashboard charts)
-  - `/api/agent/query`: Agentic SQL/LLM queries
-  - `/api/report/deep`: Generate LLM-powered report
-  - `/api/report/followup`: Ask follow-up questions on a report
-  - `/api/report/chat-generate`: Generate report from chat context
-
-## Frontend Flow
-
-- `dashboard.html`:
-  - Brand/product analytics, scraping controls, agentic query UI.
-  - Triggers scraping via `/api/scrape/{brand}`.
-  - Shows analytics charts (Chart.js) from `/api/analytics/products`.
-- `seo.html`:
-  - SEO analytics, brand comparison, export, and trends.
-  - Calls `/api/seo/keywords` for data.
-- `report.html`:
-  - Report is auto-generated on load, with chat Q&A for follow-up.
-  - Calls `/api/report/deep`, `/api/report/followup`, `/api/report/chat-generate`.
-
-## Database
-
-- `products_data.db`: Main SQLite DB. Table: `products` (brand, title, price, description, ...)
-- Populated by scraper and used for all analytics.
-
-## Environment Variables
-
-- `GROQ_API_KEY`: Required for all LLM (Groq/LLaMA 4) calls.
-
-## Extending & Debugging
-
-- Add new brands:
-  - Update `scrape_struct.json` and the `known_brands` list in `agent_graph.py`.
-- Debug agent:
-  - Run `agent/agent_graph.py` directly for step-by-step CLI logs.
-- Add new analytics:
-  - Extend `routers/trends.py` or `seo_logic.py`.
-- Frontend:
-  - Edit `templates/` HTML files. All API endpoints are RESTful and return JSON.
-- LLM prompt tuning:
-  - Prompts are in `report_utils/report_gen.py`, `agent_graph.py`, and routers.
-
-## Output Files
-
-- `output/query_history.json`: LLM query/explanation history
-- `output/seo_analytics.json`: SEO analytics per brand
-- `result/report.txt`: Last generated report
-- `seo_keywords.json`: Brand keyword cache
-
-## Unused/Obsolete Files
-
-- Remove any files not listed above if not referenced in code or templates.
-
-## Support
-
-For issues, open an issue or contact the maintainer.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
