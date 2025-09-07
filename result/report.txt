@@ -1,56 +1,33 @@
-## Comprehensive Report Based on Latest Product and SEO Data
+To generate a report on 10 products from Khaadi, I'll need to rely on the available data. Since there's no direct product data available, I'll use the provided SEO analytics and query history explanations to create a structured report.
 
-### Executive Summary
+### Khaadi Product Report
 
-This report analyzes the latest product and SEO data for five brands: Khaadi, Outfitters, Sana Safinaz, Alkaram Studio, and Breakout. We evaluate their SEO performance, product offerings, and pricing strategies to provide insights into their e-commerce presence.
+#### Overview
+Khaadi is a prominent brand with a significant online presence. According to the available data, Khaadi has 225 products available.
 
-### SEO Analytics
+#### SEO Analytics for Khaadi
+- **Keyword Density**: 20.0
+- **Content Quality**: 29.36
+- **Brand Consistency**: 25.12
+- **Uniqueness**: 20.0
+- **Readability**: 71.62
 
-The SEO analytics data provides average scores for various metrics across the five brands.
+#### Product Insights
+1. **Number of Products Above PKR 5,000**: Multiple queries indicate that Khaadi has around 38-43 products priced above PKR 5,000.
+2. **Price Range**: The prices for these products range from PKR 5,000 to PKR 9,500.
+3. **Product Types**: The products include various kurtas, pants, and 3-piece outfits.
+4. **Materials Used**: Common materials include Thai Silk, Russian Raw Silk, Cotton Dobby, and Polyester.
+5. **Product Features**: Many products are embroidered.
 
-#### Average SEO Scores
+#### Top Product Insights (Based on Available Data)
+While specific product details are not available, the top 5 most expensive products across related brands include items like Printed Cambric Kurta, Suede Loafers, Stitched Lawn Embroidered Shirt, and Embroidered Jacquard Tailored 3 Piece. Although these are not confirmed Khaadi products, they give an insight into the high-end product categories.
 
-| Brand | Keyword Density | Content Quality | Brand Consistency | Uniqueness | Readability |
-| --- | --- | --- | --- | --- | --- |
-| Khaadi | 20.0 | 29.34 | 25.0 | 20.2 | 71.68 |
-| Outfitters | 24.68 | 63.08 | 18.54 | 72.74 | 96.12 |
-| Sana Safinaz | 97.98 | 63.85 | 0.0 | 13.03 | 69.72 |
-| Alkaram Studio | 20.0 | 27.3 | 14.59 | 12.43 | 78.11 |
-| Breakout | 24.42 | 49.15 | 0.85 | 66.12 | 87.96 |
+#### Recommendations
+1. **Content Improvement**: Khaadi's content quality score is 29.36, which is relatively low. Enhancing product descriptions and ensuring that all products have detailed material and description information could improve this score.
+2. **Product Pricing Strategy**: With a range of products priced between PKR 5,000 to PKR 9,500, analyzing the profitability and customer preference within this range could help in optimizing the product pricing strategy.
+3. **SEO Optimization**: Improving keyword density and uniqueness could enhance Khaadi's SEO, potentially increasing the visibility of their products.
 
-#### Key Observations
+#### Conclusion
+Khaadi has a diverse product range with a significant number of high-priced items. Focusing on improving content quality and SEO could enhance their online presence and potentially drive more sales.
 
-1. **Sana Safinaz** has the highest keyword density (97.98), indicating a strong focus on SEO keywords.
-2. **Outfitters** excels in content quality (63.08) and readability (96.12), suggesting well-crafted product descriptions.
-3. **Khaadi** maintains a consistent brand identity with a score of 25.0 for brand consistency.
-4. **Breakout** and **Outfitters** have high uniqueness scores (66.12 and 72.74, respectively), indicating diverse product offerings.
-
-### Product Data
-
-The most recent 20 products scraped provide insights into pricing and product descriptions.
-
-#### Pricing Analysis
-
-* The average price of the scraped products is PKR 5,441.55.
-* The highest-priced product is PKR 9,374 (Fully black trainers).
-* The lowest-priced product is PKR 2,600.
-
-#### Product Categories
-
-* Clothing (e.g., kurtas, pants, shirts)
-* Footwear (e.g., loafers, trainers)
-* Accessories (e.g., travel bag, backpack)
-
-### Query History Insights
-
-1. **Khaadi** has a large number of products (225) with 38-43 products priced above PKR 5,000.
-2. **Alkaram Studio** has the highest average product price and offers products in the casual category.
-3. **Outfitters** has 265 products available, with an average price of PKR 4,146.98.
-
-### Recommendations
-
-1. **Top Brand Based on SEO**: Outfitters, due to its high content quality and readability scores.
-2. **Brand with the Most Products**: Outfitters, with 265 products available.
-3. **Brand with the Highest Average Product Price**: Alkaram Studio.
-
-By focusing on these insights, e-commerce strategies can be optimized for better performance.
+Since I couldn't scrape 10 specific products due to the lack of direct product data, this report is based on the available SEO analytics and query history explanations. For a more detailed product analysis, direct access to product data would be necessary.
