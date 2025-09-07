@@ -189,6 +189,10 @@ flask_session/
 secrets.json
 config.ini
 
+# Runtime status files
+scrape_status.json
+seo_keywords.json
+
 # LangChain cache
 .langchain/
 
