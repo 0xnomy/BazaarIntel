@@ -1,84 +1,39 @@
 # BazaarIntel
 
-BazaarIntel is an AI-powered e-commerce analytics platform for Pakistani fashion brands. It automates data collection, SEO analytics, product analysis, and report generation using dynamic web scraping, LLMs, and agentic workflows.
+BazaarIntel is a data engineering–driven AI analytics platform designed to deliver scalable e-commerce insights for Pakistani fashion brands. It builds robust end-to-end data pipelines that automate dynamic web scraping, data integration, semantic SEO analysis, and interactive report generation, leveraging large language models (LLMs) and agentic workflows.[web:42]
 
 ![BazaarIntel Dashboard](das.png)
 
-## What It Does
+## Key Features and Data Engineering Workflow
 
-- **Automated Pipeline**: From user goal to scraping, SEO analysis, data storage, and report generation
-- **Dynamic Web Scraping**: Scrapes product data from multiple Pakistani fashion brands
-- **SEO Analytics**: Extracts and scores SEO keywords using LLM analysis
-- **Interactive Dashboard**: Real-time product analytics, brand comparison, and trend visualizations
-- **Report Generation**: LLM-powered reports with follow-up Q&A capabilities
+- **End-to-End Data Pipeline**: Automates user goal interpretation, dynamic data extraction, semantic analytics, data storage, and automated reporting using a modular pipeline architecture.
+- **Dynamic Web Scraping at Scale**: Efficiently scrapes evolving product data from multiple e-commerce platforms using Playwright, with handling of heterogeneous and case-insensitive URLs.
+- **Integrated Data Storage**: Stores structured product metadata in a relational SQLite database supporting complex querying and analytics.
+- **Semantic SEO Analysis**: Employs LLM-based keyword extraction and scoring to quantify SEO impact, keyword density, content quality, and uniqueness, with results cached for performant reuse.
+- **Interactive Real-Time Dashboard**: Presents product-level analytics, brand comparisons, and trend visualizations driven by up-to-date data warehouses.
+- **Automated Report Generation**: Utilizes LLM-powered generation and querying capabilities to produce comprehensive, data-driven business intelligence reports.
 
-## How It Works
+## Architecture and Pipeline Stages
 
-1. **Agentic Workflow** (LangGraph + LLaMA 4):
-   - Planner node extracts brand and parameters from user goals
-   - Automated pipeline: scrape → SEO analysis → data storage → report generation
+1. **Agentic Orchestration Layer (LangGraph + LLaMA 4)**  
+   - Orchestrates workflow from user input to scraping commands, SEO analysis, and data persistence with feedback loops for pipeline automation.
 
-2. **Data Collection**:
-   - Uses Playwright for dynamic web scraping
-   - Handles multiple base URLs per brand with case-insensitive matching
-   - Stores product data in SQLite database
+2. **Data Collection and Integration**  
+   - Uses Playwright for browser-based scraping, handling multiple base URLs with robust matching rules.  
+   - Extracted data is parsed and structured with BeautifulSoup before ingestion in SQLite.
 
-3. **SEO Analysis**:
-   - LLM extracts high-impact keywords and phrases
-   - Calculates keyword density, content quality, and uniqueness scores
-   - Results cached in JSON files for performance
+3. **Semantic Analytics Layer**  
+   - Performs LLM inference to extract high-value SEO features using Groq API powered LLaMA 4.  
+   - Calculates quantitative SEO metrics, facilitating downstream analytics.
 
-4. **API Endpoints**:
-   - `/api/scrape/{brand}`: Trigger product scraping
-   - `/api/seo/keywords`: Generate SEO analytics
-   - `/api/analytics/products`: Get product analytics data
-   - `/api/report/deep`: Generate comprehensive reports
-   - `/api/agent/query`: Agentic SQL/LLM queries
+4. **API and Query Interfaces**  
+   - Provides RESTful endpoints to trigger scraping, generate SEO keywords, fetch analytics, generate reports, and support agentic SQL+LLM queries.
 
-## APIs Used
+## Technologies
 
-- **Groq API**: For LLaMA 4 model inference
-- **Playwright**: Browser automation for web scraping
-- **BeautifulSoup**: HTML parsing and data extraction
+- **Groq API** for LLaMA 4 LLM inference enabling semantic analysis and report generation.  
+- **Playwright** for dynamic, scalable browser automation and scraping of rich e-commerce sites.  
+- **BeautifulSoup** for efficient HTML parsing and data extraction.  
+- **SQLite** for lightweight, relational data storage supporting project-specific schema.
+- **FastAPI** for high-performance API serving and real-time dashboard endpoints.
 
-## Setup
-
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. Set up environment variables in `.env`:
-   ```
-   GROQ_API_KEY=your_groq_api_key
-   ```
-
-3. Start the server:
-   ```bash
-   uvicorn main:app --reload
-   ```
-
-4. Access dashboard at `http://localhost:8000`
-
-## Project Structure
-
-```
-bazaarintel/
-├── agent/agent_graph.py      # LangGraph agent pipeline
-├── main.py                   # FastAPI application entrypoint
-├── scrapper.py               # Product data scraper
-├── seo_logic.py              # SEO scoring utilities
-├── routers/                  # API endpoint modules
-├── templates/                # HTML dashboard templates
-├── report_utils/report_gen.py # LLM-powered report generation
-├── products_data.db          # SQLite database
-└── output/                   # Generated analytics and reports
-```
-
-## MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
